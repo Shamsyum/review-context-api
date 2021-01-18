@@ -6,7 +6,7 @@ import Main from './MainWithFunction.js';
 import './App.css';
 
 function App() {
-  const [theme, setThemeMode] = useState("dark")
+  const [theme, setThemeMode] = useState("dark");
   return (
     <ThemeContext.Provider value = {[ theme, setThemeMode ]}>
       <div>

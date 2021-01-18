@@ -3,7 +3,7 @@ import ThemeContext from './ThemeContext.js';
 import './MainWithFunction.css';
 
 const Main = () => {
-    const theme = useContext(ThemeContext);
+    const [theme, setThemeMode] = useContext(ThemeContext);
     return (
         <main className={`${theme}`}>
             <h1>Heading 1</h1>

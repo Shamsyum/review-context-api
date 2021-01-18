@@ -15,6 +15,7 @@ const ThemeToggler = () => {
             <span title = "switch theme">
                 <h1>{theme === "light" ? "🌚" : "🌞"}</h1>
             </span>
+            <h1>Theme in ThemeToggler: {theme}</h1>
         </div>
     );
 }
