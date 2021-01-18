@@ -1,11 +1,16 @@
 import React, {useContext} from 'react';
 import ThemeContext from './ThemeContext.js';
-import './MainWithFunction.css';
+import AppTheme from "./Colors.js";
 
 const Main = () => {
     const [theme, setThemeMode] = useContext(ThemeContext);
+    const currentTheme = AppTheme[theme];
     return (
-        <main className={`${theme}`}>
+        <main style = {{
+            padding: "1rem",
+            backgroundColor: `${currentTheme.backgroundColor}`,
+            color: `${currentTheme.textColor}`,
+        }}>
             <h1>Heading 1</h1>
             <p>This is a paragraph</p>
             <button>This is a button</button>
