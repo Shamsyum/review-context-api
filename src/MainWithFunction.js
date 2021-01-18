@@ -3,7 +3,7 @@ import ThemeContext from './ThemeContext.js';
 import AppTheme from "./Colors.js";
 
 const Main = () => {
-    const [theme, setThemeMode] = useContext(ThemeContext);
+    const [theme] = useContext(ThemeContext);
     const currentTheme = AppTheme[theme];
     return (
         <main style = {{
