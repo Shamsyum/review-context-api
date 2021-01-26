@@ -1,19 +1,15 @@
-import React, {useState} from 'react';
-import ThemeContext from './ThemeContext.js';
+// Incomplete !!! 
+// The Context is not updating correctly with useReducer.
 import Header from './Header.js';
 import Main from './MainWithFunction.js';
 
 import './App.css';
-
 function App() {
-  const [theme, setThemeMode] = useState("dark");
   return (
-    <ThemeContext.Provider value = {[ theme, setThemeMode ]}>
       <div>
         <Header />
         <Main />
       </div>
-    </ThemeContext.Provider>
   );
 }
 

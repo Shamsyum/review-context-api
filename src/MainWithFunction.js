@@ -1,9 +1,12 @@
-import React, {useContext} from 'react';
-import ThemeContext from './ThemeContext.js';
-import AppTheme from "./Colors.js";
+import {useSelector} from 'react-redux';
+import AppTheme from './Colors';
 
 const Main = () => {
-    const [theme] = useContext(ThemeContext);
+
+    const theme = useSelector((state)=>{
+        return state.theme;
+    })
+    
     const currentTheme = AppTheme[theme];
     return (
         <main style = {{
@@ -14,6 +17,7 @@ const Main = () => {
             <h1>Heading 1</h1>
             <p>This is a paragraph</p>
             <button>This is a button</button>
+            theme in main: {theme}
         </main>
     );
 }
