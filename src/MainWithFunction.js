@@ -17,7 +17,6 @@ const Main = () => {
             <h1>Heading 1</h1>
             <p>This is a paragraph</p>
             <button>This is a button</button>
-            theme in main: {theme}
         </main>
     );
 }

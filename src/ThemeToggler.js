@@ -14,7 +14,6 @@ const ThemeToggler = () => {
             <span title = "switch theme">
                 <h1>{theme === "light" ? "🌚" : "🌞"}</h1>
             </span>
-            theme in toggle is: {theme}
         </div>
     );
 }
